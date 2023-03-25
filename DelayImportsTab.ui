@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DelayImportsTabClass</class>
+ <widget class="QDialog" name="DelayImportsTabClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DelayImportsTab</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTableWidget" name="tableWidget"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableWidget" name="tableWidget_2"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>cellClicked(int,int)</signal>
+   <receiver>DelayImportsTabClass</receiver>
+   <slot>ShowFun(int,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>502</x>
+     <y>125</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>843</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ShowFun(int,int)</slot>
+ </slots>
+</ui>

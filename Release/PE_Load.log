@@ -1,0 +1,64 @@
+﻿  Reading Qt configuration (C:/Qt/Qt5.14.2/5.14.2/msvc2017/bin/qmake)
+  uic AddressCalWND.ui
+  uic Chara.ui
+  uic DataDirWnd.ui
+  uic DebugViewWND.ui
+  uic DelayImportsTab.ui
+  uic ExportsTabWnd.ui
+  uic ImportsTabWND.ui
+  uic PEMainWnd.ui
+  uic PE_Load.ui
+  uic ReLocalTabWND.ui
+  uic ResTabWND.ui
+  uic SectionWND.ui
+  uic tezhenzhi.ui
+  uic TLSWND.ui
+  rcc PE_Load.qrc
+  moc PE_Load.h
+  moc AddressCalWND.h
+  moc DelayImportsTab.h
+  moc TLSWND.h
+  moc DebugViewWND.h
+  moc ReLocalTabWND.h
+  moc ResTabWND.h
+  moc ImportsTabWND.h
+  moc ExportsTabWnd.h
+  moc DataDirWnd.h
+  moc SectionWND.h
+  moc tezhenzhi.h
+  moc Chara.h
+  moc PEMainWnd.h
+  AddressCalWND.cpp
+  axyPE.cpp
+  Chara.cpp
+  DataDirWnd.cpp
+  DebugViewWND.cpp
+  DelayImportsTab.cpp
+  ExportsTabWnd.cpp
+  ImportsTabWND.cpp
+  PEMainWnd.cpp
+  ReLocalTabWND.cpp
+  ResTabWND.cpp
+  SectionWND.cpp
+  tezhenzhi.cpp
+  TLSWND.cpp
+  WindowsAxy.cpp
+  PE_Load.cpp
+  main.cpp
+C:\Users\89598\source\repos\PE_Load\PE_Load\axyPE.cpp(358): warning C4715: “axyPE::GetSectionName”: 不是所有的控件路径都返回值
+  qrc_PE_Load.cpp
+  moc_PE_Load.cpp
+  moc_AddressCalWND.cpp
+  moc_DelayImportsTab.cpp
+  moc_TLSWND.cpp
+  moc_DebugViewWND.cpp
+  moc_ReLocalTabWND.cpp
+  moc_ResTabWND.cpp
+  moc_ImportsTabWND.cpp
+  moc_ExportsTabWnd.cpp
+  moc_DataDirWnd.cpp
+  moc_SectionWND.cpp
+  moc_tezhenzhi.cpp
+  moc_Chara.cpp
+  moc_PEMainWnd.cpp
+  PE_Load.vcxproj -> C:\Users\89598\source\repos\PE_Load\Release\PE_Load.exe

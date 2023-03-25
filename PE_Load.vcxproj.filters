@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="PE主窗口">
+      <UniqueIdentifier>{0430389a-a5b3-4e4c-99a9-76426e142fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="工具类">
+      <UniqueIdentifier>{3161b0fe-e11d-4e8c-9ad7-0f03e195c44a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="主窗口">
+      <UniqueIdentifier>{337d2412-d103-4f08-aa71-758329b53813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="子系统窗口">
+      <UniqueIdentifier>{af1fea54-a2f0-4295-8bff-16735481da0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="特征窗口">
+      <UniqueIdentifier>{364f845c-e4eb-4486-bd7b-e72b0b1ce5ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="区段窗口">
+      <UniqueIdentifier>{6ab85615-30a3-411b-88bb-b65bcd78461b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数据目录表">
+      <UniqueIdentifier>{358a866f-3934-4b2d-af60-140830eed7ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="导出表">
+      <UniqueIdentifier>{3b664231-4f3d-4722-9e07-4a4b000dec61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="导入表">
+      <UniqueIdentifier>{84ecb4e2-99c3-4184-a705-5602c62ed8e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源表">
+      <UniqueIdentifier>{6fbc5948-84f8-4ec7-9e73-6678cc49d15b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="重定位表">
+      <UniqueIdentifier>{829c0040-5fdb-4179-8953-3a992e87a6cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="调试信息">
+      <UniqueIdentifier>{651dafb2-bfa5-4d61-a1cd-5e770aa208c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TLS表">
+      <UniqueIdentifier>{bfbf97e0-b1d4-4fb4-bde7-0890b05b721b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="延迟导入表">
+      <UniqueIdentifier>{aa7e22d6-8d10-4670-beb2-d496aaec66e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="位置计算器">
+      <UniqueIdentifier>{3760fbe2-6783-4e28-8321-4cbf7c363d1d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="PE_Load.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axyPE.cpp">
+      <Filter>工具类</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsAxy.cpp">
+      <Filter>工具类</Filter>
+    </ClCompile>
+    <ClCompile Include="PE_Load.cpp">
+      <Filter>主窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="PEMainWnd.cpp">
+      <Filter>PE主窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="Chara.cpp">
+      <Filter>子系统窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="tezhenzhi.cpp">
+      <Filter>特征窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="SectionWND.cpp">
+      <Filter>区段窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="DataDirWnd.cpp">
+      <Filter>数据目录表</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportsTabWnd.cpp">
+      <Filter>导出表</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportsTabWND.cpp">
+      <Filter>导入表</Filter>
+    </ClCompile>
+    <ClCompile Include="ResTabWND.cpp">
+      <Filter>资源表</Filter>
+    </ClCompile>
+    <ClCompile Include="ReLocalTabWND.cpp">
+      <Filter>重定位表</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugViewWND.cpp">
+      <Filter>调试信息</Filter>
+    </ClCompile>
+    <ClCompile Include="TLSWND.cpp">
+      <Filter>TLS表</Filter>
+    </ClCompile>
+    <ClCompile Include="DelayImportsTab.cpp">
+      <Filter>延迟导入表</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressCalWND.cpp">
+      <Filter>位置计算器</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="x64\Debug\uic\ui_PE_Load.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsAxy.h">
+      <Filter>工具类</Filter>
+    </ClInclude>
+    <ClInclude Include="axyPE.h">
+      <Filter>工具类</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_PEMainWnd.h">
+      <Filter>PE主窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_Chara.h">
+      <Filter>子系统窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_tezhenzhi.h">
+      <Filter>特征窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_SectionWND.h">
+      <Filter>区段窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_DataDirWnd.h">
+      <Filter>数据目录表</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_ExportsTabWnd.h">
+      <Filter>导出表</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_ImportsTabWND.h">
+      <Filter>导入表</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_ResTabWND.h">
+      <Filter>资源表</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_ReLocalTabWND.h">
+      <Filter>重定位表</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_AddressCalWND.h">
+      <Filter>位置计算器</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PE_Load.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="PE_Load.h">
+      <Filter>主窗口</Filter>
+    </QtMoc>
+    <QtMoc Include="PEMainWnd.h">
+      <Filter>PE主窗口</Filter>
+    </QtMoc>
+    <QtMoc Include="Chara.h">
+      <Filter>子系统窗口</Filter>
+    </QtMoc>
+    <QtMoc Include="tezhenzhi.h">
+      <Filter>特征窗口</Filter>
+    </QtMoc>
+    <QtMoc Include="SectionWND.h">
+      <Filter>区段窗口</Filter>
+    </QtMoc>
+    <QtMoc Include="DataDirWnd.h">
+      <Filter>数据目录表</Filter>
+    </QtMoc>
+    <QtMoc Include="ExportsTabWnd.h">
+      <Filter>导出表</Filter>
+    </QtMoc>
+    <QtMoc Include="ImportsTabWND.h">
+      <Filter>导入表</Filter>
+    </QtMoc>
+    <QtMoc Include="ResTabWND.h">
+      <Filter>资源表</Filter>
+    </QtMoc>
+    <QtMoc Include="ReLocalTabWND.h">
+      <Filter>重定位表</Filter>
+    </QtMoc>
+    <QtMoc Include="DebugViewWND.h">
+      <Filter>调试信息</Filter>
+    </QtMoc>
+    <QtMoc Include="TLSWND.h">
+      <Filter>TLS表</Filter>
+    </QtMoc>
+    <QtMoc Include="DelayImportsTab.h">
+      <Filter>延迟导入表</Filter>
+    </QtMoc>
+    <QtMoc Include="AddressCalWND.h">
+      <Filter>位置计算器</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="PEMainWnd.ui">
+      <Filter>PE主窗口</Filter>
+    </QtUic>
+    <QtUic Include="PE_Load.ui">
+      <Filter>主窗口</Filter>
+    </QtUic>
+    <QtUic Include="Chara.ui">
+      <Filter>子系统窗口</Filter>
+    </QtUic>
+    <QtUic Include="tezhenzhi.ui">
+      <Filter>特征窗口</Filter>
+    </QtUic>
+    <QtUic Include="SectionWND.ui">
+      <Filter>区段窗口</Filter>
+    </QtUic>
+    <QtUic Include="DataDirWnd.ui">
+      <Filter>数据目录表</Filter>
+    </QtUic>
+    <QtUic Include="ExportsTabWnd.ui">
+      <Filter>导出表</Filter>
+    </QtUic>
+    <QtUic Include="ImportsTabWND.ui">
+      <Filter>导入表</Filter>
+    </QtUic>
+    <QtUic Include="ResTabWND.ui">
+      <Filter>资源表</Filter>
+    </QtUic>
+    <QtUic Include="ReLocalTabWND.ui">
+      <Filter>重定位表</Filter>
+    </QtUic>
+    <QtUic Include="DebugViewWND.ui">
+      <Filter>调试信息</Filter>
+    </QtUic>
+    <QtUic Include="TLSWND.ui">
+      <Filter>TLS表</Filter>
+    </QtUic>
+    <QtUic Include="DelayImportsTab.ui">
+      <Filter>延迟导入表</Filter>
+    </QtUic>
+    <QtUic Include="AddressCalWND.ui">
+      <Filter>位置计算器</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="aa7wy-bjq55-001.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

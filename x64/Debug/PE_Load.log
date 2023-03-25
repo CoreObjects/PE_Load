@@ -1,0 +1,8 @@
+﻿  uic PE_Load.ui
+  moc PE_Load.h
+  PEMainWnd.cpp
+  PE_Load.cpp
+  main.cpp
+C:\Users\89598\source\repos\PE_Load\PE_Load\PE_Load.cpp(53,59): warning C4311: “类型强制转换”: 从“HMODULE”到“DWORD”的指针截断
+  moc_PE_Load.cpp
+  PE_Load.vcxproj -> C:\Users\89598\source\repos\PE_Load\x64\Debug\PE_Load.exe

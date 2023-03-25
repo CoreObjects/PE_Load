@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{793EE077-DAED-478D-9F3E-0F7FB255D270}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">10.0.19041.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.14.2_msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
+    <QtInstall>5.14.2_msvc2017</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddressCalWND.cpp" />
+    <ClCompile Include="axyPE.cpp" />
+    <ClCompile Include="Chara.cpp" />
+    <ClCompile Include="DataDirWnd.cpp" />
+    <ClCompile Include="DebugViewWND.cpp" />
+    <ClCompile Include="DelayImportsTab.cpp" />
+    <ClCompile Include="ExportsTabWnd.cpp" />
+    <ClCompile Include="ImportsTabWND.cpp" />
+    <ClCompile Include="PEMainWnd.cpp" />
+    <ClCompile Include="ReLocalTabWND.cpp" />
+    <ClCompile Include="ResTabWND.cpp" />
+    <ClCompile Include="SectionWND.cpp" />
+    <ClCompile Include="tezhenzhi.cpp" />
+    <ClCompile Include="TLSWND.cpp" />
+    <ClCompile Include="WindowsAxy.cpp" />
+    <QtRcc Include="PE_Load.qrc" />
+    <QtUic Include="AddressCalWND.ui" />
+    <QtUic Include="Chara.ui" />
+    <QtUic Include="DataDirWnd.ui" />
+    <QtUic Include="DebugViewWND.ui" />
+    <QtUic Include="DelayImportsTab.ui" />
+    <QtUic Include="ExportsTabWnd.ui" />
+    <QtUic Include="ImportsTabWND.ui" />
+    <QtUic Include="PEMainWnd.ui" />
+    <QtUic Include="PE_Load.ui" />
+    <QtMoc Include="PE_Load.h" />
+    <ClCompile Include="PE_Load.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="ReLocalTabWND.ui" />
+    <QtUic Include="ResTabWND.ui" />
+    <QtUic Include="SectionWND.ui" />
+    <QtUic Include="tezhenzhi.ui" />
+    <QtUic Include="TLSWND.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="x64\Debug\uic\ui_AddressCalWND.h" />
+    <QtMoc Include="AddressCalWND.h" />
+    <ClInclude Include="axyPE.h" />
+    <QtMoc Include="DelayImportsTab.h" />
+    <QtMoc Include="TLSWND.h" />
+    <QtMoc Include="DebugViewWND.h" />
+    <ClInclude Include="x64\Debug\uic\ui_ReLocalTabWND.h" />
+    <QtMoc Include="ReLocalTabWND.h" />
+    <ClInclude Include="x64\Debug\uic\ui_ResTabWND.h" />
+    <QtMoc Include="ResTabWND.h" />
+    <ClInclude Include="x64\Debug\uic\ui_ImportsTabWND.h" />
+    <QtMoc Include="ImportsTabWND.h" />
+    <ClInclude Include="x64\Debug\uic\ui_ExportsTabWnd.h" />
+    <QtMoc Include="ExportsTabWnd.h" />
+    <ClInclude Include="x64\Debug\uic\ui_DataDirWnd.h" />
+    <QtMoc Include="DataDirWnd.h" />
+    <ClInclude Include="x64\Debug\uic\ui_SectionWND.h" />
+    <QtMoc Include="SectionWND.h" />
+    <ClInclude Include="x64\Debug\uic\ui_tezhenzhi.h" />
+    <QtMoc Include="tezhenzhi.h" />
+    <ClInclude Include="x64\Debug\uic\ui_Chara.h" />
+    <QtMoc Include="Chara.h" />
+    <ClInclude Include="x64\Debug\uic\ui_PEMainWnd.h" />
+    <QtMoc Include="PEMainWnd.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="WindowsAxy.h" />
+    <ClInclude Include="x64\Debug\uic\ui_PE_Load.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PE_Load.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="aa7wy-bjq55-001.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

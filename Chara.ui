@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CharaClass</class>
+ <widget class="QDialog" name="CharaClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>381</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Chara</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" rowspan="4">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QRadioButton" name="radioButton_0">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>未知</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_1">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>本地</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Windows图形界面</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_3">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Windows控制台</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_4">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>OS/2控制台</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_5">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>本地windows9x驱动器</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_6">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>WindowsCE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_7">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>EFI应用程序</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_8">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>EFI引导服务设备</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_9">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>EFI运行时驱动器</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_10">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>EFI只读存储器</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_11">
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>X-Box</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="pushButton">
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>确定</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>278</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>当前值：</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>OnOk()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>214</x>
+     <y>22</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>459</x>
+     <y>22</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_0</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>-34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_1</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>89</x>
+     <y>-21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>38</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>36</x>
+     <y>-64</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>443</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>496</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>205</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>203</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>406</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>356</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>117</x>
+     <y>410</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>CharaClass</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>243</x>
+     <y>46</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>436</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OnOk()</slot>
+  <slot>Change()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReLocalTabWNDClass</class>
+ <widget class="QDialog" name="ReLocalTabWNDClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>549</width>
+    <height>356</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ReLocalTabWND</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="tableWidget"/>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget_2"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>cellClicked(int,int)</signal>
+   <receiver>ReLocalTabWNDClass</receiver>
+   <slot>ShowSUBItem(int,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>467</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>633</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ShowSUBItem(int,int)</slot>
+ </slots>
+</ui>
